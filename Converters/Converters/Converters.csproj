@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <PackageId>Xamarin.Forms.XAML.Utils.Converters</PackageId>
-    <PackageVersion>1.1.1</PackageVersion>
+    <PackageVersion>1.1.2</PackageVersion>
     <Authors>Krzysztof Wrona</Authors>
     <Description>Xamarin Forms XAML commonly used converters package.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
