@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using Xamarin.Forms;
 
 namespace Converters
@@ -9,7 +7,11 @@ namespace Converters
     public class IsNotNull : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-            => value != null;
+        {
+            if (targetType != typeof(bool))
+                throw new ArgumentException($"Incorrect target type {targetType} for IsNotNull Converter. Expected type is {typeof(bool)}");
+            return value != null;
+        } 
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
